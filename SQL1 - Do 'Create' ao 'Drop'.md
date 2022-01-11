@@ -108,39 +108,10 @@ fotinha
 
 ## Alterando a Estrutura de uma Colunas
 
->Adiciona uma nova coluna. 
-`ALTER TABLE nome-tabela1 ADD nome-coluna2`
-
-*Exemplo real:*
-
-fotinha
-
-##
-
->Altera as características da coluna. 
-`ALTER COLUMN nome-coluna1 varchar (300) NOT NULL`
-
-*Exemplo real:*
-
-fotinha
-
-##
-
->Renomeia a coluna. 
-`EXEC SP_RENAME 'nome-tabela.nome-coluna-antiga', 'nome-coluna-nova', 'column'`
-
-*Exemplo real:*
-
-fotinha
-
-##
-
->Renomeia a tabela. 
-`EXEC SP_RENAME 'nome-tabela-antiga', 'nome-tabela-nova'`
-
-*Exemplo real:*
-
-fotinha
+1. Adiciona uma nova coluna.................. `ALTER TABLE nome-tabela1 ADD nome-coluna2`
+2. Altera as características da Coluna... `ALTER COLUMN nome-coluna1 varchar (300) NOT NULL`
+3. Renomeia a coluna................................. `EXEC SP_RENAME 'nome-tabela.nome-coluna-antiga', 'nome-coluna-nova', 'column'`
+4. Renomeia a tabela...................................`EXEC SP_RENAME 'nome-tabela-antiga', 'nome-tabela-nova'`
 
 ---
 
