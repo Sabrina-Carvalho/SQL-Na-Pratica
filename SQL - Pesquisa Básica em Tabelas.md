@@ -44,6 +44,17 @@ Para filtrar linhas em uma pesquisa, utilizamos a cláusula  *WHERE*.
 --- | ---
 `CONDIÇÃO` | Condição que define o escopo (limite) de apresentação dos resultados.
 
+>Obs.: Ao determinar uma condição, atente-se a um detalhe: caso a sua condição envolva apenas letras, faz-se necessário o uso das aspas simples ('') na hora de inserir a condição, caso seja apenas números, o uso das aspas não se faz obrigatórias.
+
+*Exemplo:*
+
+**Condição** | **CORRETO / ERRADO**
+--- | ---
+`color = red` | ERRADO
+`color = 'red'` | CERTO
+`number = 1` | CERTO
+`number = '1'` | CERTO
+
 ##
 
 ##Operadores Relacionais
