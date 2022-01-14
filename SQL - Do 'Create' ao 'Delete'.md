@@ -56,9 +56,9 @@ constraint-de-tabela
 `coluna-constraint` | Regras agregadas à coluna.
 `constraint-de-tabela` | Regras agregadas à tabela inteira.
 
-*Exemplo real:*
+*Exemplo:*
 
-fotinha
+![EveryonecanCode](https://i2.paste.pics/a316197a4a0d1cabdd7a8b554b2ee727.png)
 
 ---
 
@@ -76,21 +76,6 @@ fotinha
 
 --- 
 
-## Atualizando Colunas
-
-`UPDATE nome-tabela SET
-nome-coluna1 = valor1,
-nome-coluna2 = valor2
-where <condição>`
-
->Com base no *WHERE*, é possível determinar qual tipo de dado será substituído / alterado. 
-
-*Exemplo real:*
-
-fotinha
-
----
-
 ## Inserindo Dados nas Colunas
 
 `INSERT INTO nome-tabela 
@@ -100,13 +85,26 @@ values (3, 2);`
 
 >Observe que, ao inserir novos dados às colunas, os valores colocados seguem a ordem em que as colunas foram colocadas na *query*, ou seja: na *coluna1*, serão inseridos os valores 1 e 3, e já na *coluna2* serão o valores 2 e 2, e assim por diante.
 
-*Exemplo real:*
+*Exemplo:*
 
-fotinha
+![EveryonecanCode](https://i2.paste.pics/bbc84a9b7f1d735c9cd1f5d7728b5ce3.png)
+---
 
---- 
+## Atualizando Colunas
 
-## Alterando a Estrutura de uma Colunas
+`UPDATE nome-tabela SET
+nome-coluna1 = valor1,
+nome-coluna2 = valor2
+where <condição>`
+
+>Com base no *WHERE*, é possível determinar qual tipo de dado será substituído / alterado. 
+
+*Exemplo:*
+
+![EveryonecanCode](https://i2.paste.pics/7d52e443cdd7dfa4d172609dc1421a53.png)
+---
+
+## Alterando a Estrutura de uma Coluna
 
 1. Adiciona uma nova coluna.................. `ALTER TABLE nome-tabela1 ADD nome-coluna2`
 2. Altera as características da Coluna... `ALTER COLUMN nome-coluna1 varchar (300) NOT NULL`
@@ -119,9 +117,9 @@ fotinha
 
 `SELECT * INTO nome-tabela1 FROM nome-tabela2`
 
-*Exemplo real:*
+*Exemplo:*
 
-fotinha
+![EveryonecanCode](https://i2.paste.pics/854693ece5c5eca7dd3bb07e962c5d20.png)
 
 ---
 
@@ -133,6 +131,6 @@ WHERE nome-coluna1 = 'X'`
 >Com base no *WHERE*, é possível determinar qual tipo de dado será substituído / alterado. 
 
 
-*Exemplo real:*
+*Exemplo:*
 
-fotinha
+![EveryonecanCode](https://i2.paste.pics/47837af9feae3af70810ac624bfc4ca9.png)
