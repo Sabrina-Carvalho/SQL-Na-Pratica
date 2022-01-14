@@ -79,17 +79,17 @@ Operadores relacionais definem um tipo de condição básica.
 
 A seguir, uma tabela com as possibilidades que envolvem o operador *AND* e o operador *OR*.
 
-**CONDIÇÃO1** | **OPERADOR** | **CONDIÇÃO2** | **RESULTADO**
---- | --- | --- | ---
-VERDADEIRA | `AND` | VERDADEIRA | VERDADEIRO
-VERDADEIRA | `AND` | FALSA | FALSO
-FALSA | `AND` | VERDADEIRA | FALSO
-FALSA | `AND` | FALSA | FALSO
---- | --- | --- | ---
-VERDADEIRA | `OR` | VERDADEIRA | VERDADEIRO
-VERDADEIRA | `OR` | FALSA | VERDADEIRO
-FALSA | `OR` | VERDADEIRA | VERDADEIRO
-FALSA | `OR` | FALSA | FALSO
+**CONDIÇÃO1** | **OPERADOR** | **CONDIÇÃO2** | **RESULTADO** | **NOT** | **RESULTADO**
+--- | --- | --- | --- | --- | ---
+VERDADEIRA | `AND` | VERDADEIRA | VERDADEIRO | `NOT` VERDADEIRO | FALSO |
+VERDADEIRA | `AND` | FALSA | FALSO | `NOT` FALSO | VERDADEIRO |
+FALSA | `AND` | VERDADEIRA | FALSO | `NOT` FALSO | VERDADEIRO |
+FALSA | `AND` | FALSA | FALSO | `NOT` FALSO | VERDADEIRO |
+--- | --- | --- | --- | --- | --- | 
+VERDADEIRA | `OR` | VERDADEIRA | VERDADEIRO | `NOT` VERDADEIRO | FALSO |
+VERDADEIRA | `OR` | FALSA | VERDADEIRO | `NOT` VERDADEIRO | FALSO |
+FALSA | `OR` | VERDADEIRA | VERDADEIRO | `NOT` VERDADEIRO | FALSO |
+FALSA | `OR` | FALSA | FALSO | `NOT` FALSO | VERDADEIRO |
 
 
 >Obs.: Não há limitação no us e na comibinação de condições utilizando operadores `AND` e `OR`. Mas devemos tomar cuidado na combinação de ambos. A avaliação desse tipo de condição é, no padrão, da esquerda para a direita. É conveniente utilizar parênteses para determinar o que você quer comparar.
