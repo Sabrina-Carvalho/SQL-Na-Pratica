@@ -1,5 +1,3 @@
-#Fontes...
-
 >Site: Microsoft | Tipos de Dados
 https://docs.microsoft.com/pt-br/sql/t-sql/data-types/data-types-transact-sql?view=sql-server-ver15
 
