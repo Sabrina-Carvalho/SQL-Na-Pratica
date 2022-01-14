@@ -63,15 +63,15 @@ Operadores relacionais definem um tipo de condição básica.
 
 ## 
 
-##Operadores Lógicos
+#Operadores Lógicos
 
 Operadores relacionais definem um tipo de condição básica.
 
 **OPERADOR** | **SIGNIFICADO** | **EXEMPLO** | **DESCRIÇÃO**
 --- | --- | --- | ---
-´AND´ | E | condição1 AND condição2 | O operador ´AND´ indica que as duas condições devem ser verdadeiras para que seja mostrada a linha.
-´OR´ | Ou | condição1 OU condição2 | O operador ´OU´ indica que somente uma condição deve ser verdadeira para que seja mostrada a linha.
-´NOT´ ou ´!´ | Não / Negação | NOT condição | O operador ´NOT´ indica que tal condição está senod negada.
+`AND` | E | condição1 AND condição2 | O operador `AND` indica que as duas condições devem ser verdadeiras para que seja mostrada a linha.
+`OR` | Ou | condição1 OU condição2 | O operador ´OU´ indica que somente uma condição deve ser verdadeira para que seja mostrada a linha.
+´NOT´ ou ´!´ | Não / Negação | NOT condição | O operador ´NOT´ é utilizado para inverter o resultado de uma expressão lógica, negando o resultado da condição. Caso a condição seja verdadeira, será retornado falso e vice-versa.
 
 *Obs.: Da mesma forma que podemos comparar uma coluna com um valor, podemos comparar uma coluna com outra.*
 
@@ -81,17 +81,18 @@ A seguir, uma tabela com as possibilidades que envolvem o operador *AND* e o ope
 
 **CONDIÇÃO1** | **OPERADOR** | **CONDIÇÃO2** | **RESULTADO**
 --- | --- | --- | ---
-VERDADEIRA | ´AND´ | VERDADEIRA | VERDADEIRO
-VERDADEIRA | ´AND´ | FALSA | FALSO
-FALSA | ´AND´ | VERDADEIRA | FALSO
-FALSA | ´AND´ | FALSA | FALSO
+VERDADEIRA | `AND` | VERDADEIRA | VERDADEIRO
+VERDADEIRA | `AND` | FALSA | FALSO
+FALSA | `AND` | VERDADEIRA | FALSO
+FALSA | `AND` | FALSA | FALSO
 --- | --- | --- | ---
-VERDADEIRA | ´OR´ | VERDADEIRA | VERDADEIRO
-VERDADEIRA | ´OR´ | FALSA | VERDADEIRO
-FALSA | ´OR´ | VERDADEIRA | VERDADEIRO
-FALSA | ´OR´ | FALSA | FALSO
+VERDADEIRA | `OR` | VERDADEIRA | VERDADEIRO
+VERDADEIRA | `OR` | FALSA | VERDADEIRO
+FALSA | `OR` | VERDADEIRA | VERDADEIRO
+FALSA | `OR` | FALSA | FALSO
 
 
+>Obs.: Não há limitação no us e na comibinação de condições utilizando operadores `AND` e `OR`. Mas devemos tomar cuidado na combinação de ambos. A avaliação desse tipo de condição é, no padrão, da esquerda para a direita. É conveniente utilizar parênteses para determinar o que você quer comparar.
 
 
 
