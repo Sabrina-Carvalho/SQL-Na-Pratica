@@ -6,7 +6,7 @@
 
 Antes de começarmos, explicarei o propósito deste repositório: 
 
-> "SQL na prática" tem como foco, introduzir, relembrar e apresentar aos estudantes de SQL, conceitos, exercícios e dicas sobre essa linguagem. A fim de agregar nos estudos da linguagem, e de exercitar o que já foi aprendido.
+> "SQL na prática" tem como foco, introduzir, relembrar e apresentar aos estudantes de SQL, conceitos e dicas sobre essa linguagem. A fim de agregar nos estudos da linguagem, e de fortalecer o que já foi aprendido.
 
 ## 
 
