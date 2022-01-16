@@ -70,3 +70,23 @@ SELECT nome-coluna1, COUNT(nome-coluna1) AS 'Quantidade' FROM nome-tabela GROUP 
 SELECT nome-coluna1, COUNT(nome-coluna1) FROM nome-tabela WHERE <condicao> GROUP BY nome-coluna1 HAVING COUNT(nome-coluna1) > 10;
 
 SELECT nome-tabela1.nome-coluna1, t1.nome-coluna2, t2.nome-coluna3 FROM nome-tabela1 AS t1 INNER JOIN nome-tabela2 AS t2 ON t2.nome-coluna3 = t1.nome-coluna3;
+SELECT * FROM nome-tabela1 t1 INNER JOIN nome-tabela2 t2 ON t1.nome-coluna1 = t2.nome-coluna1;
+
+SELECT nome-coluna1, nome-coluna2 FROM nome-tabela1 UNION SELECT nome-coluna1, nome-coluna2 FROM nome-tabela2;
+SELECT nome-coluna1, nome-coluna2 FROM nome-tabela1 UNION ALL SELECT nome-coluna1, nome-coluna2 FROM nome-tabela2;
+
+SELECT nome-coluna1, nome-coluna2, nome-coluna3 FROM nome-tabela1 WHERE nome-coluna2 = 'x' UNION SELECT nome-coluna1, nome-coluna2, nome-coluna3 FROM nome-tabela1 WHERE nome-coluna3 = 'y';
+
+SELECT nome-coluna1, DATEPART(month, nome-coluna1) AS 'x' FROM nome-tabela1;
+SELECT AVG (nome-coluna1) AS Media, DATEPART (month, nome-coluna1) AS Mes FROM nome-tabela1 GROUP BY DATEPART (month, nome-coluna1) ORDER BY Mes;
+
+SELECT CONCAT (nome-coluna1, ' ', nome-coluna2) FROM nome-tabela1;
+SELECT UPPER (nome-coluna1) FROM nome-tabela1;
+SELECT nome-coluna1, SUBSTRING (nome-coluna1, 1, 3) FROM nome-tabela1;
+SELECT nome-coluna1, REPLACE (nome-coluna1, '-', '#') FROM nome-tabela1;
+
+SELECT nome-coluna1 + nome-coluna2 FROM nome-tabela1;
+SELECT ROUND (nome-coluna1, 2) FROM nome-tabela1;
+SELECT SQRT (nome-coluna1) FROM nome-tabela1;
+SELECT * FROM nome-tabela1 WHERE nome-coluna1 > (SELECT AVG (nome-coluna1) FROM nome-tabela1);
+SELECT nome-coluna1 FROM nome-tabela1 WHERE nome-coluna2 IN (SELECT nome-coluna2zzszz FROM nome-tabela2 WHERE nome-tabela3 = 'x');
